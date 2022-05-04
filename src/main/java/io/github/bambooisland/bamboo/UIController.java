@@ -461,6 +461,24 @@ public class UIController {
         pause();
     }
 
+    @FXML
+    private void goBackFiveSec(ActionEvent event) {
+        MediaPlayer player;
+        if ((player = PlayerManager.getCurrentPlayer()) == null) {
+            return;
+        }
+        player.seek(player.currentTimeProperty().get().add(Duration.seconds(-5)));
+    }
+
+    @FXML
+    private void forwardFiveSec(ActionEvent event) {
+        MediaPlayer player;
+        if ((player = PlayerManager.getCurrentPlayer()) == null) {
+            return;
+        }
+        player.seek(player.currentTimeProperty().get().add(Duration.seconds(5)));
+    }
+
     private static boolean playing;
 
     private static long time;

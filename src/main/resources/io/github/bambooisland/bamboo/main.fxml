@@ -30,6 +30,27 @@
             <MenuItem mnemonicParsing="false"
               onAction="#pauseKey" text="一時停止">
               <accelerator>
+                <KeyCodeCombination alt="UP" code="K"
+                  control="UP" meta="UP" shift="UP" shortcut="UP" />
+              </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false"
+              onAction="#goBackFiveSec" text="５秒戻す">
+              <accelerator>
+                <KeyCodeCombination alt="UP" code="J"
+                  control="UP" meta="UP" shift="UP" shortcut="UP" />
+              </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false"
+              onAction="#forwardFiveSec" text="５秒進む">
+              <accelerator>
+                <KeyCodeCombination alt="UP" code="L"
+                  control="UP" meta="UP" shift="UP" shortcut="UP" />
+              </accelerator>
+            </MenuItem>
+            <MenuItem mnemonicParsing="false"
+              onAction="#pauseKey" text="一時停止">
+              <accelerator>
                 <KeyCodeCombination alt="UP" code="P"
                   control="DOWN" meta="UP" shift="UP" shortcut="UP" />
               </accelerator>
