@@ -154,10 +154,7 @@ public class PlayerManager {
             }
             if (newValue.greaterThan(totalTime.get().multiply(stopTime.get()))
                     && currentPlayer.getStatus().equals(MediaPlayer.Status.PLAYING)) {
-                currentPlayer.setVolume(currentPlayer.getVolume() - 0.02);
-                if (currentPlayer.getVolume() <= 0) {
-                    nextSong(true);
-                }
+                nextSong(true);
             }
         });
         currentPlayer.setOnReady(() -> {
